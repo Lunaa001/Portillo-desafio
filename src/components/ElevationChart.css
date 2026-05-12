@@ -1,0 +1,40 @@
+.elevation-chart {
+  width: 100%;
+  margin: 1.5rem auto;
+  background: rgba(20, 20, 20, 0.95);
+  padding: 1rem;
+  border-radius: 10px;
+  border: 1px solid rgba(80, 80, 80, 0.5);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.elevation-chart svg {
+  display: block;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+}
+
+/* Animaciones del corredor */
+.runner-trail {
+  animation: fadeTrail 2s ease-out;
+}
+
+.runner-km {
+  animation: bobble 1.2s ease-in-out infinite;
+}
+
+@keyframes fadeTrail {
+  0% { opacity: 1; r: 4; }
+  100% { opacity: 0; r: 1; }
+}
+
+@keyframes bobble {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-2px); }
+}
+
+@media (max-width: 768px) {
+  .elevation-chart {
+    max-width: 100%;
+    padding: 1rem;
+  }
+}
