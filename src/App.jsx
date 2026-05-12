@@ -84,6 +84,38 @@ function App() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  // Carrusel infinito con JavaScript
+  useEffect(() => {
+    const carousel = document.querySelector('.gallery-carousel');
+    if (!carousel) return;
+
+    let animationFrame;
+    let offset = 0;
+
+    const animate = () => {
+      const itemsContainer = carousel.children.length;
+      const firstChild = carousel.children[0];
+      if (!firstChild) return;
+
+      const itemWidth = firstChild.offsetWidth + 24; // item width + gap
+      const totalWidth = itemWidth * (itemsContainer / 2); // Primera mitad
+
+      offset += 2; // Velocidad de scroll
+
+      // Resetear cuando lleguemos a la mitad
+      if (offset >= totalWidth) {
+        offset = 0;
+      }
+
+      carousel.style.transform = `translateX(-${offset}px)`;
+      animationFrame = requestAnimationFrame(animate);
+    };
+
+    animationFrame = requestAnimationFrame(animate);
+
+    return () => cancelAnimationFrame(animationFrame);
+  }, []);
+
   const scrollToSection = (id) => {
     const element = document.getElementById(id);
     element?.scrollIntoView({ behavior: 'smooth' });
