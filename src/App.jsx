@@ -100,7 +100,7 @@ function App() {
       const itemWidth = firstChild.offsetWidth + 24; // item width + gap
       const totalWidth = itemWidth * (itemsContainer / 2); // Primera mitad
 
-      offset += 2; // Velocidad de scroll
+      offset += 1; // Velocidad de scroll
 
       // Resetear cuando lleguemos a la mitad
       if (offset >= totalWidth) {
