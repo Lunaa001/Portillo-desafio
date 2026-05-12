@@ -107,13 +107,13 @@
 
 /* Hero Section */
 .hero {
-  min-height: 80vh;
+  min-height: 110vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 8rem clamp(1rem, 3vw, 2rem) 2rem;
+  padding: 8rem clamp(1rem, 3vw, 2rem) 4rem;
   position: relative;
 }
 
@@ -155,11 +155,12 @@
 
 .hero-info {
   display: flex;
-  gap: clamp(1rem, 3vw, 2rem);
+  gap: clamp(2rem, 5vw, 3rem);
   justify-content: center;
   align-items: flex-start;
   flex-wrap: wrap;
-  margin-bottom: 3rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   width: 100%;
 }
 
