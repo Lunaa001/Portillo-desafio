@@ -113,7 +113,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 2rem clamp(1rem, 3vw, 2rem) 2rem;
+  padding: 8rem clamp(1rem, 3vw, 2rem) 2rem;
   position: relative;
 }
 
@@ -1009,7 +1009,7 @@
 
   /* Aggressive responsive for small phones */
   .hero {
-    padding: 1.2rem 0.8rem 1.5rem;
+    padding: 5.5rem 0.8rem 1.5rem;
     min-height: auto;
   }
 
@@ -1311,7 +1311,7 @@
 
   /* Hero */
   .hero {
-    padding: 1.8rem 1.5rem 2rem;
+    padding: 4.5rem 1.5rem 2rem;
     min-height: auto;
   }
 
@@ -1653,7 +1653,7 @@
 
   /* Hero */
   .hero {
-    padding: 1rem 0.8rem 1.2rem;
+    padding: 4rem 0.8rem 1.2rem;
     min-height: auto;
   }
 
