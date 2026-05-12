@@ -107,13 +107,13 @@
 
 /* Hero Section */
 .hero {
-  min-height: 100vh;
+  min-height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: clamp(3rem, 6vw, 5rem) clamp(1rem, 3vw, 2rem) 2rem;
+  padding: 2rem clamp(1rem, 3vw, 2rem) 2rem;
   position: relative;
 }
 
@@ -1009,20 +1009,21 @@
 
   /* Aggressive responsive for small phones */
   .hero {
-    padding: 3rem 1rem 2rem;
+    padding: 1.2rem 0.8rem 1.5rem;
+    min-height: auto;
   }
 
   .hero-title {
-    font-size: 2.2rem;
+    font-size: 2rem;
     line-height: 1.1;
   }
 
   .hero-title .highlight {
-    font-size: 2.4rem;
+    font-size: 2.2rem;
   }
 
   .hero-description {
-    font-size: 0.95rem;
+    font-size: 0.85rem;
     word-break: break-word;
   }
 
@@ -1310,9 +1311,8 @@
 
   /* Hero */
   .hero {
-    padding: 2rem 1.5rem 3rem;
-    min-height: 100vh;
-    justify-content: center;
+    padding: 1.8rem 1.5rem 2rem;
+    min-height: auto;
   }
 
   .hero-content {
@@ -1326,13 +1326,13 @@
   }
 
   .hero-title {
-    font-size: 4rem;
+    font-size: 2.5rem;
     margin-bottom: 1rem;
     line-height: 1.1;
   }
 
   .hero-title .highlight {
-    font-size: 4.3rem;
+    font-size: 2.8rem;
   }
 
   .hero-description {
@@ -1653,18 +1653,18 @@
 
   /* Hero */
   .hero {
-    padding: 2.2rem 0.8rem 1.5rem;
+    padding: 1rem 0.8rem 1.2rem;
     min-height: auto;
   }
 
   .hero-title {
-    font-size: 2.7rem;
+    font-size: 1.8rem;
     line-height: 1;
     word-break: break-word;
   }
 
   .hero-title .highlight {
-    font-size: 2.9rem;
+    font-size: 2rem;
   }
 
   .hero-subtitle {
